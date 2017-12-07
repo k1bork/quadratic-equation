@@ -74,11 +74,11 @@ function quadratic(a,b,c){
     if(a!=0&&b!=0&&c!=0){
         diskrim(a,b,c);
     }else if(a==0){
-        ifAo();
+        ifAo(b,c);
     }else if(b==0){
-        ifBo();
+        ifBo(a,c);
     }else if(c==0){
-        ifCo();
+        ifCo(a,b);
     }else{
         alert("та не може бути");
     }
