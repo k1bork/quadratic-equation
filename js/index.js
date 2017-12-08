@@ -33,7 +33,7 @@ function diskrim(a,b,c){
     }else{
        let x1=(-b+(Math.sqrt(d)/2*a));
         let x2=(-b-(Math.sqrt(d)/2*a));
-        let res=`'x1='+${x1}+ '<br> x2=${x2}`;
+        let res=`x1=${x1}<br> x2=${x2}`;
     result(res);
     }
 }
