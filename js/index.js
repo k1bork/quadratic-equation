@@ -77,5 +77,5 @@ function quadratic(a,b,c){
     }
 }
 function result(x1,x2){
-    document.write( "x1="+x1+", x2="+x2)
+    document.write( "x1="+x1+"<br> x2="+x2)
 }
