@@ -63,7 +63,7 @@ function ifBo(a,c){
 //якщо a=0
 function ifAo(b,c){
     if(b==0){
-        alert("рівняння не має вирішення, бо а=0 і b=0");
+        alert("рівняння не має вирішення, тому, що а=0 і b=0");
     }else{
         let x1=-c/b;
         alert("x1="+x1);
