@@ -24,42 +24,51 @@ function enterNumbers(){
 function diskrim(a,b,c){
    let d=b*b-4*a*c;
     if(d<0){
-       document.write("Дискримінант менше 0, рівняння не має дійсних коренів"); 
+        let res="Дискримінант менше 0, рівняння не має дійсних коренів";
+       result(res);
     }else if(d==0){
         let x=-b/2*a;
-        alert("D=0, х="+x);
+        let res='"D=0, х="+x';
+        result(res);
     }else{
        let x1=(-b+(Math.sqrt(d)/2*a));
         let x2=(-b-(Math.sqrt(d)/2*a));
-        result(x1,x2);
+        let res="'x1='+x1+ '<br> x2='+x2";
+    result(res);
     }
 }
 //якщо c=0
 function ifCo(a,b){
     let x1=0;
     let x2=-b/a;
-    result(x1,x2)
+    let res="'x1='+x1+ '<br> x2='+x2";
+    result(res);
 }
 //Якщо b=0
 function ifBo(a,c){
     if(c==0){
         let x=0;
-        alert("x="+x);
+        let res='"x="+x';
+        result(res);
     }else if((-c/a)<0){
-      document.write("рівняння не має дійсних коренів"); 
+        let res="рівняння не має дійсних коренів";
+      result(res)
     }else{
         let x1=-Math.sqrt(-c/a);
         let x2=Math.sqrt(-c/a);
-        result(x1,x2);
+        let res="'x1='+x1+ '<br> x2='+x2";
+    result(res);
     }
 }
 //якщо a=0
 function ifAo(b,c){
     if(b==0){
-        document.write("рівняння не має вирішення, тому, що а=0 і b=0");
+        let res="рівняння не має вирішення, тому, що а=0 і b=0";
+        result(res)
     }else{
         let x1=-c/b;
-        alert("x1="+x1);
+        let res='"x1="+x1';
+        result(res);
     }
 }
 //обчислення рівняння
@@ -76,6 +85,6 @@ function quadratic(a,b,c){
         document.write("та не може бути");
     }
 }
-function result(x1,x2){
-    document.write( "x1="+x1+"<br> x2="+x2)
+function result(res){
+    document.write(res)
 }
