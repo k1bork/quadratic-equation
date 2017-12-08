@@ -67,7 +67,7 @@ function ifAo(b,c){
         result(res)
     }else{
         let x1=-c/b;
-        let res='"x1="+x1';
+        let res='"x1="+${x1}';
         result(res);
     }
 }
