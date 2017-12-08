@@ -28,12 +28,12 @@ function diskrim(a,b,c){
        result(res);
     }else if(d==0){
         let x=-b/2*a;
-        let res='"D=0, х="+x';
+        let res=`"D=0, х="+${x}`;
         result(res);
     }else{
        let x1=(-b+(Math.sqrt(d)/2*a));
         let x2=(-b-(Math.sqrt(d)/2*a));
-        let res="'x1='+x1+ '<br> x2='+x2";
+        let res=`'x1='+${x1}+ '<br> x2='+${x2}`;
     result(res);
     }
 }
@@ -41,14 +41,14 @@ function diskrim(a,b,c){
 function ifCo(a,b){
     let x1=0;
     let x2=-b/a;
-    let res="'x1='+x1+ '<br> x2='+x2";
+    let res=`'x1='+${x1}+ '<br> x2='+${x2}`;
     result(res);
 }
 //Якщо b=0
 function ifBo(a,c){
     if(c==0){
         let x=0;
-        let res='"x="+x';
+        let res=`"x="+${x}`;
         result(res);
     }else if((-c/a)<0){
         let res="рівняння не має дійсних коренів";
@@ -56,7 +56,7 @@ function ifBo(a,c){
     }else{
         let x1=-Math.sqrt(-c/a);
         let x2=Math.sqrt(-c/a);
-        let res="'x1='+x1+ '<br> x2='+x2";
+        let res=`'x1='+${x1}+ '<br> x2='+${x2}`;
     result(res);
     }
 }
@@ -67,7 +67,7 @@ function ifAo(b,c){
         result(res)
     }else{
         let x1=-c/b;
-        let res='"x1="+${x1}';
+        let res=`"x1="+${x1}`;
         result(res);
     }
 }
