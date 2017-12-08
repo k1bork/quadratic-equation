@@ -31,8 +31,8 @@ function diskrim(a,b,c){
         let res=`D=0, х=${x}`;
         result(res);
     }else{
-       let x1=(-b+(Math.sqrt(d)/2*a));
-        let x2=(-b-(Math.sqrt(d)/2*a));
+       let x1=(-b+Math.sqrt(d))/2*a;
+        let x2=(-b-Math.sqrt(d))/2*a;
         let res=`x1=${x1}<br> x2=${x2}`;
     result(res);
     }
@@ -85,6 +85,7 @@ function quadratic(a,b,c){
         document.write("та не може бути");
     }
 }
+
 function result(res){
     document.write(res)
 }
